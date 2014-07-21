@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sample</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+</head>
+<body>
+<style>
+/*
+.audiojs .scrubber  { background: #5a5a5a; width: 210px;  margin: 0px; }
+*/
+</style>
+<script src="/js/audiojs/audio.min.js"></script>
+    <script>
+      audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+      });
+</script>
+   <audio preload="none">
+      <source src="/files/C.mp3">
+    </audio>
+
+<!--
+<audio src="/files/C.mp3" >
+<p>not support brower</p>
+</audio> 
+-->
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+	<p>UPLOPAD PAGE</p>
+  <input type="file" name="upfile" size="30" /><br />
+  <br />
+  <input type="submit" value="UPLOAD" />
+</form>
+</body>
+</html>
